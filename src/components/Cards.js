@@ -6,65 +6,62 @@ import product01 from '../assets/img/product01.jpg';
 import product02 from '../assets/img/product02.jpg';
 import product03 from '../assets/img/product03.jpg';
 import Counter from './Counter';
-import Fade from 'react-reveal/Fade';
 
 function Cards() {
   return (
     <StyledCard>
-      <Fade top cascade>
-        <div className='Card-Container'>
-          <div className='Top-Container'>
-            <h1>Special Products</h1>
+      <div className='Card-Container'>
+        <div className='Top-Container'>
+          <h1>Special Products</h1>
+        </div>
+
+        <div className='Main-Products'>
+          <div className='Card-Item'>
+            <div className='Card-Image'>
+              <img src={product01} alt='CupCake' />
+            </div>
+            <div className='Card-Text'>
+              <h1>Product Name</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                maxime.
+              </p>
+              <p>$99.99</p>
+              <Counter />
+            </div>
           </div>
 
-          <div className='Main-Products'>
-            <div className='Card-Item'>
-              <div className='Card-Image'>
-                <img src={product01} alt='CupCake' />
-              </div>
-              <div className='Card-Text'>
-                <h1>Product Name</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem, maxime.
-                </p>
-                <p>$99.99</p>
-                <Counter />
-              </div>
+          <div className='Card-Item'>
+            <div className='Card-Image'>
+              <img src={product02} alt='CupCake' />
             </div>
-
-            <div className='Card-Item'>
-              <div className='Card-Image'>
-                <img src={product02} alt='CupCake' />
-              </div>
-              <div className='Card-Text'>
-                <h1>Product Name</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem, maxime.
-                </p>
-                <p>$99.99</p>
-                <Counter />
-              </div>
+            <div className='Card-Text'>
+              <h1>Product Name</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                maxime.
+              </p>
+              <p>$99.99</p>
+              <Counter />
             </div>
+          </div>
 
-            <div className='Card-Item'>
-              <div className='Card-Image'>
-                <img src={product03} alt='CupCake' />
-              </div>
-              <div className='Card-Text'>
-                <h1>Product Name</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem, maxime.
-                </p>
-                <p>$99.99</p>
-                <Counter />
-              </div>
+          <div className='Card-Item'>
+            <div className='Card-Image'>
+              <img src={product03} alt='CupCake' />
+            </div>
+            <div className='Card-Text'>
+              <h1>Product Name</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                maxime.
+              </p>
+              <p>$99.99</p>
+              <Counter />
             </div>
           </div>
         </div>
-      </Fade>
+      </div>
     </StyledCard>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
 
 import Review from '../components/Review';
 import Slider from '../components/Slider';
@@ -16,9 +15,7 @@ function HomePage() {
           <Review />
         </section>
         <section className='card_container'>
-          <Fade left cascade>
-            <Cards />
-          </Fade>
+          <Cards />
         </section>
       </div>
       <Footer />
