@@ -19,10 +19,18 @@ function ToggleMenu() {
       <NavBackground clicked={click}></NavBackground>
       <Navigation clicked={click} className='nav-toggle'>
         <List>
-          <a href='#'>Home</a>
-          <a href='#'>About</a>
-          <a href='#'>Menu</a>
-          <a href='#'>Contact</a>
+          <a className='ItemLink' href='/'>
+            Home
+          </a>
+          <a className='ItemLink' href='/'>
+            About
+          </a>
+          <a className='ItemLink' href='/'>
+            Menu
+          </a>
+          <a className='ItemLink' href='/'>
+            Contact
+          </a>
         </List>
       </Navigation>
     </StyledToggleButton>
@@ -61,35 +69,35 @@ const List = styled.ul`
   text-align: center;
   width: 100%;
   height: 100%;
-  background-color: #2e4c6d;
+  background-color: #ad8b73;
   opacity: 0.9;
-`;
 
-const ItemLink = styled.li`
+  .ItemLink {
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 500;
   text-decoration: none;
-  color: #eeeeee;
+  color: #fff2f2;
   padding: 0.5rem 1.5rem;
   width: 100%;
   background-image: linear-gradient(
     120deg,
     transparent 0%,
     transparent 50%,
-    #057FFF 50%
+    #f47c7c 50%
   );
   background-size: 240%;
   transition: all 0.4s;
   &:hover,
   &:active {
     background-position: 100%;
-    color: #2a57dc 
+    color: #f47c7c 
     transform: translateX(1rem);
   }
   a {
     color: var(--white-color-2);
   }
+}
 `;
 
 const StyledToggleButton = styled.div`
