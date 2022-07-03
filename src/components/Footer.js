@@ -37,6 +37,9 @@ const StyledSocialIcons = styled.div`
   bottom: 50px;
   width: 100px;
   z-index: 15;
+  @media (max-width: 768px) {
+    bottom: 10px;
+  }
   .icons {
     display: flex;
     flex-direction: column;
@@ -48,6 +51,9 @@ const StyledSocialIcons = styled.div`
       justify-content: center;
       cursor: pointer;
       color: #354259;
+      @media (max-width: 768px) {
+        padding: 0.5rem 0;
+      }
     }
     svg {
       :hover {

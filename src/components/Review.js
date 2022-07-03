@@ -72,6 +72,9 @@ const StyledReview = styled.div`
     transition: all 0.5s ease-in-out;
     text-align: center;
     color: #354259;
+    @media (max-width: 768px) {
+      padding: 50px 5px;
+    }
   }
   .img-container {
     display: flex;
@@ -80,6 +83,11 @@ const StyledReview = styled.div`
     height: 100px;
     margin: 0 20px;
     margin-bottom: 5px;
+    @media (max-width: 768px) {
+      width: 80px;
+      height: 80px;
+      margin: 0 10px;
+    }
   }
   .person-img {
     width: 100%;
@@ -92,10 +100,14 @@ const StyledReview = styled.div`
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
+    @media (max-width: 768px) {
+      width: 50%;
+    }
   }
 
   .author {
     text-transform: capitalize;
+    padding-bottom: 5px;
   }
 
   .text {
@@ -103,6 +115,9 @@ const StyledReview = styled.div`
     color: #ad8b73;
     font-size: 12px;
     transition: all 0.5s ease-in-out;
+    @media (max-width: 768px) {
+      font-size: 11px;
+    }
   }
   .prev-btn,
   .next-btn {

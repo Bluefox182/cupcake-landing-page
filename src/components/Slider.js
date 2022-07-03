@@ -142,9 +142,15 @@ const StyledSlider = styled.div`
       text-align: center;
       justify-content: center;
       display: flex;
-      height: 50vh;
+      flex-wrap: wrap;
+      height: 60vh;
       align-items: center;
       overflow: hidden;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 44px;
+      }
     }
   }
 
@@ -161,18 +167,7 @@ const StyledSlider = styled.div`
     background-repeat: no-repeat;
     height: 60vh;
     width: 100%;
-    h1 {
-      font-family: 'Pacifico', cursive;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 65px;
-      text-shadow: 0 0 10px #354259;
-      text-align: center;
-      justify-content: center;
-      display: flex;
-      height: 50vh;
-      align-items: center;
-      overflow: hidden;
+    @media (max-width: 768px) {
     }
   }
   .Hero-Image2 {

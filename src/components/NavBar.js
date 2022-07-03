@@ -4,9 +4,9 @@ import styled from 'styled-components';
 // import logo from '../assets/img/logo01.jpg';
 import logo from '../assets/img/logo02.png';
 
-function NavBar() {
+function NavBar({ navToggle }) {
   return (
-    <StyledNavBar>
+    <StyledNavBar className={`${navToggle ? 'nav-toggle' : ''}`}>
       <div className='Logo'>
         <img src={logo} alt='logo' />
       </div>
@@ -30,6 +30,11 @@ const StyledNavBar = styled.div`
   height: 100px;
   overflow-y: hidden;
   background-color: #fff2f2;
+  @media (max-width: 767px) {
+    transform: translateY(-100%);
+    z-index: 20;
+    height: 0;
+  }
 
   .Logo {
     width: 40%;

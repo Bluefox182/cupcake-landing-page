@@ -85,6 +85,9 @@ const StyledCard = styled.div`
       text-align: center;
       color: #f47c7c;
     }
+    @media (max-width: 768px) {
+      margin-top: 50px;
+    }
   }
   .Main-Products {
     width: 100%;
@@ -94,6 +97,9 @@ const StyledCard = styled.div`
     align-items: center;
     flex-wrap: wrap;
     padding: 40px 0;
+    @media (max-width: 767px) {
+      gap: 20px;
+    }
   }
 
   .Card-Item {
